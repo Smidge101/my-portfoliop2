@@ -1,7 +1,7 @@
 
         body
         {
-           background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
             background-repeat: no-repeat;
             background-size: cover; 
             background-position: center;
@@ -21,7 +21,21 @@
             text-decoration: none;
             color: rgba(16, 242, 91, 0.797);
         }
-        img
-        { 
-
+        .container
+        {
+            display: grid;
+            align-items: center; 
+            grid-template-columns: 1fr 2fr; /* Image takes 1 part, text takes 2 parts */
+            column-gap: 20px; /* Adds space between image and text */
+        }
+        img 
+        {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+        .text p
+        {
+            font-size: 30px;
         }
